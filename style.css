@@ -186,7 +186,7 @@ body {
     animation: car 4s 0.001s ease infinite;
 }
 
-/* 
+
 @keyframes tree1{
     0%{transform: translateX(275rem);}
     100%{transform: translateX(-5rem) ;}
@@ -240,4 +240,4 @@ body {
     100%{
         transform: translateX(-150rem);
     }
-}  */
+} 
