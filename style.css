@@ -1,0 +1,243 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow: hidden;
+    font-size: 1rem;
+    background-color: #5B11F9;
+}
+
+
+/* .... content of animation......... */
+
+.content {
+    max-width: 132rem;
+    min-width: 92rem;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 4px solid #fff;
+    width: 70vw;
+    height: 50vh;
+    z-index: 999;
+}
+
+/* .......clouds............ */
+.clouds {
+    background: url('./img/clouds.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -30%;
+    left: 20%;
+}
+
+/* ................ mountain............ */
+
+.mountain-one,
+.mountain-two,
+.mountain-three 
+{
+    width: 0;
+    height: 0;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
+    border-bottom: 10rem solid #712fff;
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+    animation: mountains 10s linear infinite;
+}
+
+.mountain-two {
+    right: 4%;
+    bottom: -4rem;
+}
+
+.mountain-three {
+    right: 10%;
+}
+
+/*.......hill...........  */
+
+.hill-one,
+.hill-two,
+.hill-three,
+.hill-four,
+.hill-five {
+    width: 30rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #712fff;
+    position: absolute;
+    bottom: -2rem;
+    right: 55%;
+    animation: hill 10s linear infinite;
+}
+
+.hill-two {
+    height: 3.5rem;
+    right: 35%;
+}
+
+.hill-three {
+    right: 15%;
+ 
+}
+.hill-four {
+    width: 60rem;
+    right: -10%;
+    height: 3rem;
+    animation: hill 10s linear infinite;
+}
+.hill-five {
+    width: 60rem;
+    height: 3.5rem;
+    left: -10%;
+    animation: hill 10s linear infinite;
+}
+
+
+
+
+/* ..... rock ......... */
+.rock {
+    background-color: #fff;
+    width: 3rem;
+    height: 1.2rem;
+    position: absolute;
+    bottom: -0.6rem;
+    right: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 40%;
+    animation: rock 3.8s  ease infinite;
+}
+
+
+/* .......tree.......... */
+.tree-one,
+.tree-two,
+.tree-three{
+    background: url(./img/tree.svg) no-repeat;
+    position: absolute;
+    bottom: -0.5rem;
+    height: 15rem;
+    width: 7rem;
+}
+
+.tree-one{
+    animation: tree1 6s 0.15s linear infinite;
+}
+.tree-two{
+    animation: tree2 8s 0.15s linear infinite;
+}
+
+.tree-three{
+    animation: tree3 11s 0.05s linear infinite;
+}
+
+
+
+/* ...... Car .......... */
+.car {
+    background: url(./img/car.svg) no-repeat;
+    height: 10rem;
+    width: 18rem;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 40%;
+
+    transition: all ease;
+    animation: car 4s 0.08s ease infinite;
+    z-index: 999;
+}
+
+.car::before {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    box-shadow: -45px 55px 0 1px #f5f1ff,
+        -35px 65px 0 1px #f5f1ff;
+    animation: wind 1.5s ease infinite;
+}
+
+.car:hover{
+    box-shadow: 150px 20px 45px -40px rgba(220, 255, 131, 1);
+
+}
+
+
+
+/* ..........wheels......... */
+.wheels {
+    background: url(./img/wheels.svg) no-repeat;
+    height: 2rem;
+    width: 31rem;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transition: all ease;
+    animation: car 4s 0.001s ease infinite;
+}
+
+/* 
+@keyframes tree1{
+    0%{transform: translateX(275rem);}
+    100%{transform: translateX(-5rem) ;}
+}
+
+@keyframes tree2{
+    0%{transform: translateX(275rem);}
+    100%{transform: translateX(-5rem) ;}
+}
+
+@keyframes tree3{
+    0%{transform: translateX(275rem);}
+    100%{transform: translateX(-5rem) ;}
+}
+
+@keyframes rock{
+
+    0%{right: -10rem ;}
+    100%{right: 200rem ;}
+} 
+
+@keyframes car {
+    6%{ transform: translateY(0);}
+    7%{ transform: translateY(-6px);}
+    9%{ transform: translateY(0);}
+    10%{ transform: translateY(-1px);}
+    11%{ transform: translateY(0px);}
+}
+
+@keyframes wind{
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes mountains{
+
+    0%{
+        transform: translateX(100rem);
+    }
+    100%{
+        transform: translateX(-150rem);
+    }
+}
+
+@keyframes hill{ 
+
+    0%{
+        transform: translateX(100rem);
+    }
+    100%{
+        transform: translateX(-150rem);
+    }
+}  */
