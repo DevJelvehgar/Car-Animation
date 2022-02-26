@@ -4,7 +4,7 @@ let contentArea = document.querySelector('#contentArea');
 
 contentArea.addEventListener("click", () => {
     carHorn.play();
-    music.play();
+    // music.play();
 
 });
 

@@ -152,9 +152,8 @@ body {
     position: absolute;
     bottom: 0.8rem;
     left: 40%;
-
     transition: all ease;
-    animation: car 4s 0.08s ease infinite;
+    animation: car 4s linear infinite;
     z-index: 999;
 }
 
@@ -174,17 +173,29 @@ body {
 
 
 
-/* ..........wheels......... */
-.wheels {
-    background: url(./img/wheels.svg) no-repeat;
-    height: 2rem;
-    width: 31rem;
+/* ..........car wheels......... */
+.car-wheels{
+    display: flex;
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     left: 40%;
-    transition: all ease;
-    animation: car 4s 0.001s ease infinite;
+    width: 18.4rem;
+    height: 2rem;
 }
+
+
+.wheels{
+    animation: wheel 0.3s linear infinite;
+    background: url('img/union-wheels.svg') no-repeat;
+    bottom: 0rem;
+    left: 40%;
+    height: 2rem;
+    width: 2rem;
+    z-index: 200;
+}
+
+  
 
 
 @keyframes tree1{
@@ -241,3 +252,11 @@ body {
         transform: translateX(-150rem);
     }
 } 
+
+
+@keyframes wheel{
+    
+    100%{ transform: rotate(-360deg); }
+}
+
+
